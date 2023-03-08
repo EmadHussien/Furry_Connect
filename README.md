@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Furry Connect App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Furry Connect is a web application that connects pet owners with individuals or families who are interested in adopting a pet. <br/> The platform is built using modern web development technologies such as HTML, Sass, Material UI, React.js, Redux, JSON-Server, React-Query, React-Router, and Axios.
 
-## Available Scripts
+### Features
+- <strong> Search for pets:</strong> Users can search for pets based on various criteria such as pet type, age, breed, and location.
+- <strong> Browse pet profiles:</strong> Users can view detailed profiles for each pet, including photos, descriptions, and information about their health, without needing to sign up or creating an account. 
+- <strong> Connect with pet owners:</strong> Users can contact pet owners through the information provided by the platform to ask questions or express interest in adopting a pet.
+- <strong> Responsive and Smooth UI with Pagination:</strong> The platform provides a responsive and smooth user interface for browsing available pets. Pagination is implemented to allow users to easily navigate through multiple pages of results.
 
-In the project directory, you can run:
 
-### `npm start`
+### Technologies Used
+- HTML
+- Sass
+- Material UI
+- React.js
+- Redux
+- JSON-Server
+- React-Query
+- React-Router
+- Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Live Link
+##### You can access the live version of Furry Connect here: <a href="https://furry-connect-v0.vercel.app" target="_blanck">Furry Connect</a>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How to Run the Project Locally
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm run build`
+#### Prerequisites
+- Node.js installed on your computer
+- A package manager such as npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Installation
+Clone the repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    git clone https://github.com/EmadHussien/Furry_Connect.git 
+    
+    
+Install dependencies
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    cd Furry_Connect
+    npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+or
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    cd Furry_Connect
+    yarn install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Start the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+or
 
-### Code Splitting
+    yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app will be running on <b>http://localhost:3000</b>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ You can find the json-server data and fork it here : <a href="https://github.com/EmadHussien/mock-server" target="_blanck">Furry Connect JSON-Data</a>  
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Home Page Screenshot
+<img src= 'https://user-images.githubusercontent.com/31719363/223625995-cffbbe1a-dc4b-4463-94d9-8e0238338edd.png' width='650px' height = '600px' />
 
-### Advanced Configuration
+#### Pets Page Screenshot
+<img src= 'https://user-images.githubusercontent.com/31719363/223626092-c21b0b9b-0ba3-4794-8032-e55a934a5136.png' width='650px' height = '600px' />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Single Pet Page Mobile View Screenshot
+<img src= 'https://user-images.githubusercontent.com/31719363/223626390-682c8bdf-7e1b-4c76-b7fd-d61ffae6690b.png'/>
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
