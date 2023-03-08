@@ -1,0 +1,432 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efeef1;
+}
+
+#nav-header {
+  background-color: #8D3982;
+}
+
+#basicHero, #HeroXS, #HeroSM, #HeroLG, #HeroMD {
+  width: 100%;
+  z-index: -1;
+}
+
+#HeroLG, #HeroMD {
+  top: -100px;
+}
+
+#HeroSM {
+  top: -60px;
+}
+
+#HeroXS {
+  top: -20px;
+}
+
+#search-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-form {
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  border-radius: 21px;
+}
+#search-form #search-field {
+  outline: 0;
+  border: none;
+  width: 100%;
+  border-radius: 21px;
+  font-size: 1rem;
+  padding: 15px;
+  color: #4d4751;
+}
+#search-form button {
+  background-color: #8D3982;
+  border: none;
+}
+
+#imgCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%);
+}
+
+.circle-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.circle-container img {
+  width: 100%;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+#Card-txt {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-weight: 700;
+  opacity: 0.85;
+  margin: 0;
+}
+
+#Card-span {
+  margin-top: 2px;
+  font-size: 1.1rem;
+  letter-spacing: 1.8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+
+#btn-seeMore {
+  background-color: #8D3982;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+}
+
+#Card-top {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+#footer-container {
+  background-color: #8D3982;
+}
+
+.icons-style {
+  font-size: 1.8rem !important;
+  color: white;
+}
+
+#icons-container {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#icons-container li {
+  padding: 0 15px;
+}
+
+#copyright {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+}
+
+#footer-btm-container {
+  background-color: #572150;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+
+#footer-Img {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  #footer-LeftTop ul {
+    padding: 0;
+    margin: 0;
+  }
+  #footer-LeftTop ul li {
+    text-align: center;
+  }
+}
+#footer-LeftTop ul {
+  list-style: none;
+  margin: 0;
+}
+#footer-LeftTop ul li {
+  margin-top: 10px;
+}
+#footer-LeftTop ul a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-size: small;
+}
+#footer-LeftTop ul a:hover {
+  text-decoration: underline;
+}
+
+.white-card-bg, #signup-container, #login-container {
+  background-color: white;
+  height: 100%;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.modal-container, #signup-modal, #login-modal {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-child-container, #signup-form, #login-container #form-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#login-modal {
+  height: 445px;
+}
+
+#login-container #form-child {
+  height: 70%;
+  width: 100%;
+}
+#login-container #form-child h2 {
+  color: #4d4751;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#login-container #form-child button {
+  width: 77%;
+  height: 45px;
+  border-radius: 50px;
+}
+
+.txt-field {
+  margin-bottom: 20px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#login-span {
+  font-family: sans-serif;
+  color: #4d4751;
+}
+#login-span a {
+  color: #8D3982;
+}
+#login-span a:active {
+  color: #4d4751;
+}
+
+#signup-modal {
+  margin: 44px 0px;
+}
+
+#signup-container h2 {
+  color: #4d4751;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 40px;
+}
+#signup-container button {
+  width: 80%;
+  height: 45px;
+  border-radius: 50px;
+  margin: 20px 0px 40px 0px;
+}
+
+#signup-form {
+  height: 100%;
+}
+
+#nav-menu-btns {
+  text-decoration: none;
+  color: #8D3982;
+}
+
+#nav-menu-btns:active {
+  color: #4d4751;
+}
+
+#available-title {
+  margin: 50px;
+  letter-spacing: 2px;
+  color: #8D3982;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#petCard-container {
+  height: 300px;
+  border-radius: 8px;
+  background-color: white;
+  display: block;
+  text-decoration: none;
+}
+
+#top-petcard {
+  position: relative;
+  overflow: hidden;
+  height: 75%;
+}
+#top-petcard img {
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#top-petcard::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  left: -36%;
+  right: -36%;
+  border-radius: 65%;
+  bottom: -48px;
+  background: #fff;
+}
+
+#bottom-petcard {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bottom-petcard p {
+  font-size: 1.4rem;
+  color: #8D3982;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+#pet-img-container {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#pet-img-container img {
+  min-width: 300px;
+}
+
+#pet-info-container {
+  color: #4d4751;
+  background-color: white;
+  min-height: 300px;
+  border-radius: 8px;
+  padding: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#pet-info-container #pet-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#pet-info-container #pet-name h1 {
+  margin: 0px;
+  letter-spacing: 2px;
+}
+#pet-info-container #pet-name p {
+  margin: 0px;
+}
+#pet-info-container #info-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 16px;
+  margin: 0px;
+  list-style: disc;
+}
+#pet-info-container #info-list li {
+  margin-bottom: 2px;
+}
+#pet-info-container h2 {
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+#pet-info-container #about-list {
+  padding: 0px;
+}
+#pet-info-container #about-list div {
+  margin-bottom: 15px;
+}
+#pet-info-container #about-list .about-questions {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+#pet-owner-container {
+  position: relative;
+  background-color: white;
+  height: 250px;
+  border-radius: 8px;
+  padding: 35px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #4d4751;
+}
+#pet-owner-container #pet-circle {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 75px;
+  height: 75px;
+}
+#pet-owner-container #pet-circle #pet-icon {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-color: white;
+  color: #8D3982;
+}
+#pet-owner-container ul {
+  padding: 0px;
+}
+#pet-owner-container ul li {
+  padding: 4px 0px;
+}
+#pet-owner-container h1 {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}/*# sourceMappingURL=index.css.map */

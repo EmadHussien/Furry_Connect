@@ -1,0 +1,493 @@
+// Project colors
+$backgroundColor:#efeef1;
+$MainColor: #8D3982;
+$LightShades: #F5F4F1;
+$LightAccent:#AB7C61;
+$DarkAccent:#75647C;
+$DarkShades:#2A2C40;
+$DarkMain:#572150;
+
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $backgroundColor;
+}
+#nav-header{
+    background-color: $MainColor;
+}
+#basicHero {
+    width: 100%;
+    z-index: -1;
+}
+#HeroLG,#HeroMD {
+    @extend #basicHero;
+    top: -100px;
+}
+#HeroSM{
+    @extend #basicHero;
+    top: -60px;
+}
+#HeroXS{
+    @extend #basicHero;
+    top: -20px;
+}
+#search-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-form{
+    
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    display:flex;
+    border-radius: 21px;
+    
+    #search-field{
+        outline: 0;
+        border: none;
+        width: 100%;
+        border-radius: 21px;
+        font-size: 1rem;
+        padding: 15px;
+        color: #4d4751;
+    }
+    button{
+        background-color: $MainColor;
+        border: none;
+    }
+
+}
+
+
+#imgCard{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%);
+
+}
+.circle-container{
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    img{
+        width:100%;
+        border-radius:50%;
+        border:6px solid white;
+    }
+}
+
+#Card-txt{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: 700;
+    opacity: 0.85;
+    margin:0;
+}
+#Card-span{
+    margin-top: 2px;
+    font-size: 1.1rem;
+    letter-spacing: 1.8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;    
+}
+#btn-seeMore{
+    background-color: $MainColor;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+}
+#Card-top{
+    height:300px;
+    width:100%;
+    position:relative;
+}
+#footer-container{
+    background-color: $MainColor;
+}
+.icons-style{
+    font-size: 1.8rem !important;
+    color:white;
+}
+#icons-container{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    li{
+        padding: 0 15px;
+    }
+}
+#copyright{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+}
+
+#footer-btm-container{
+    background-color:$DarkMain;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction:column;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+#footer-Img{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+#footer-LeftTop{
+    @media screen and (max-width: 900px) {
+        ul {
+            padding: 0;
+            margin: 0;
+          li{
+             text-align: center;
+          }
+        }
+      }
+    ul{
+        list-style: none;
+       // padding-top: 10px;
+       margin: 0;
+
+        li{
+            margin-top: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family:  sans-serif;
+            letter-spacing: 1px;
+            font-weight: lighter;
+            font-size: small;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        
+    }
+}
+
+
+
+/////////////////////// Login Page Styling //////////////////
+.white-card-bg{
+    background-color: white;
+    height: 100%;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.modal-container{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-child-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#login-modal{
+    @extend .modal-container;
+    height: 445px;
+}
+
+#login-container{
+    @extend .white-card-bg;
+
+    #form-child{
+        @extend .form-child-container;
+        height: 70%;
+        width:100%;
+
+        h2{
+            color: #4d4751;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        button{
+            width: 77%;
+            height: 45px;
+            border-radius: 50px;
+        }
+    }
+}
+.txt-field{
+   margin-bottom: 20px !important;
+   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#login-span{
+    font-family: sans-serif;
+    color: #4d4751;
+    a{
+        color: $MainColor;
+    }
+    a:active{
+        color: #4d4751;
+    }
+}
+
+
+
+//////////////////////////////
+/// signup page styles
+////////////////////////////
+#signup-modal{
+    @extend .modal-container;
+   // height: 700px;
+   margin: 44px 0px;
+}
+
+
+#signup-container{
+    @extend .white-card-bg;
+    h2{
+        color: #4d4751;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 40px;
+    }
+    button{
+        width: 80%;
+        height: 45px;
+        border-radius: 50px;
+        margin: 20px 0px 40px 0px;
+    }
+}
+#signup-form{
+    @extend .form-child-container;
+    height: 100%;
+}
+
+#nav-menu-btns{
+    text-decoration: none;
+    color: $MainColor;
+}
+#nav-menu-btns:active{
+    color: #4d4751;
+}
+
+
+/////////////////////////
+/// Available pets page:
+///////////////////
+
+#available-title{
+    margin: 50px;
+    letter-spacing: 2px;
+    color: $MainColor;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/////////////////////
+/// petCard Component:
+/// /////////////////
+
+
+#petCard-container{
+ //   width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: white;
+    display: block;
+    text-decoration: none;
+}
+#top-petcard{
+ 
+    position: relative;
+    overflow: hidden;
+    height:75%;
+    
+    img{
+
+        width:100%;
+        height:280px;
+         object-fit:cover;
+        border-radius: 8px 8px 0 0;
+        object-position: center;
+       
+    }
+}
+#top-petcard::after{
+        content: "";
+        position: absolute;
+        height: 60px;
+        left: -36%;
+        right: -36%;
+        border-radius: 65%;
+        bottom: -48px;
+        background: #fff;
+    
+}
+#bottom-petcard{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 1.4rem;
+        color: $MainColor;
+        font-family: monospace;
+        font-weight: 600;
+    }
+    
+}
+
+
+//////////////////////////
+/// Pet image Component
+/////////////////////////
+
+#pet-img-container{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+    img{
+        //height: 100%;
+        min-width: 300px;
+    }
+}
+
+
+//////////////////////////
+/// PetInfo Component
+/////////////////////////
+
+#pet-info-container{
+    color: #4d4751;
+    background-color: white;
+    min-height: 300px;
+    border-radius: 8px;
+    padding: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    #pet-name{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom:20px;
+        h1{
+            margin: 0px;
+            letter-spacing: 2px;
+        }
+        p{
+            margin: 0px;
+        }
+    }
+
+    #info-list{
+        display:flex;
+        justify-content: space-between;
+        padding:10px 0px 10px 16px;
+        margin: 0px;
+        list-style:disc;
+        
+        li{
+            margin-bottom: 2px;
+        }
+    }
+    
+    h2{
+        margin: 20px 0px;
+        letter-spacing: 2px;
+    }
+    #about-list{
+        padding: 0px;
+        
+        div{
+            margin-bottom: 15px;
+        }
+        .about-questions{
+            font-size: 1rem;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+//////////////////////////
+/// Pet Owner Component
+/////////////////////////
+
+#pet-owner-container{
+    position: relative;
+    background-color: white;
+    height: 250px;
+    border-radius: 8px;
+    padding: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4d4751;
+    
+    #pet-circle{
+        position:absolute;
+        margin: auto;
+        top: 0;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        width: 75px;
+        height: 75px;
+        #pet-icon{
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-radius:50%;
+            border:6px solid white;
+            background-color: white;
+            color:$MainColor;
+        }    
+    }
+
+    ul{
+        padding: 0px;
+        li{
+            padding: 4px 0px;
+        }
+    }
+    h1{
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+}
