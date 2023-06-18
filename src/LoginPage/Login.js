@@ -4,6 +4,9 @@ import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import {signInWithEmailAndPassword } from "firebase/auth";
+// import {auth} from "./../firebase";
+
 
 function Login() {
   
@@ -19,7 +22,8 @@ function Login() {
   function handleLogin(e)
   {
     e.preventDefault();
-    console.log(loginForm);
+    console.log(loginForm.email);
+    console.log(loginForm.password);
     // TODO API REQUest
   }
   return (
